@@ -28,16 +28,20 @@ async function weather() {
     //         daydivs.innerHTML = `<h2>Day:${day.wind}</h2>`;
     //     }
     // );
+    // need to check how foreach runs again for my own satisfaction
+    // cause i know for of and for in loops better
 
     for (let i of data.forecast){
         let daydivs = document.createElement('div');
         daydivs.innerHTML = `<h2>Day:${i.day}</h2><h3>
         <h2>Temp:${i.temperature}</h2>
         <h2>Wind:${i.wind}</h2>`;
-        forecastDiv.appendChild(daydivs);
-        
+        forecastDiv.appendChild(daydivs);    
     }
-    
+    // if(data.description.value == ''){
+
+    // }
+    // i wanted to add background change as per discription but nvm
     // forecastDiv.appendChild(forecast);
 
     }
