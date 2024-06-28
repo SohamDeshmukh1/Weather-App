@@ -10,7 +10,7 @@ console.log(btn);
 btn.addEventListener('click', weather);
 
 async function weather() {
-    let city = document.querySelector('#city').value;
+    let city ="Weather in: " + document.querySelector('#city').value;
     console.log(city);
 
     let response = await fetch(`https://goweather.herokuapp.com/weather/${city}`);
@@ -29,7 +29,7 @@ async function weather() {
     //     </ul>
     // `;
     // For Future Update
-    document.body.appendChild(firstInfo); 
+    // document.body.appendChild(firstInfo); 
     
 
     showCity.innerHTML = city;
