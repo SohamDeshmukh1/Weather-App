@@ -4,6 +4,7 @@ let dis = document.querySelector('#description');
 let temp = document.querySelector('#temp');
 let wind = document.querySelector('#wind');
 let forecastDiv = document.querySelector('#forecast');
+console.log(btn);
 
 btn.addEventListener('click', weather);
 

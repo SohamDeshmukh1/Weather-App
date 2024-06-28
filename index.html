@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
-    <h1>Weather Application</h1>
-    <div class="mainContainer">
-        <div class="background">
-            <img src="Background image" alt="Background image">
-        </div>
+<body class="font-mono bg-cover bg-no-repeat" style="background-image: url(Background.jpg);height: 100vh;">
+    <!-- <h1 class="text-center pt-7 text-xl font-bold ">Weather Application</h1> -->
+    <div class="mainContainer flex justify-center ">
         <div class="info">
-            <h2 >Enter City name</h2>
-            <input type="text" id="city" placeholder="Enter city name">
-            <button id="submit">Get Weather</button>
+            <form class=" p-2 mt-4 flex border rounded-2xl px-3 bg-transparent text-xl" id="form">
+                <input type="text" id="city" placeholder="Enter City" class="bg-transparent w-full focus:outline-none border-none">
+                <submit id="submit"class="text-white ">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </submit>
+            </form>
             <div id="weatherInfo">  
-                <h2>City Name: <span id="cityShow"></span></h2>
+                <h2>Weather in <span id="cityShow"></span></h2>
                 <h2>Temperature: <span id="temp"></span></h2>
                 <h2>wind: <span id="wind"></span></h2>
                 <h2>Weather <span id="description"></span></h2>
