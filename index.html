@@ -9,21 +9,22 @@
 </head>
 <body class="font-mono bg-cover bg-no-repeat" style="background-image: url(Background.jpg);height: 100vh;">
     <!-- <h1 class="text-center pt-7 text-xl font-bold ">Weather Application</h1> -->
-    <div class="mainContainer flex justify-center ">
+    <div  class="mainContainercontent-center h-full w-3/6">
         <div class="info">
-            <form class=" p-2 mt-4 flex border rounded-2xl px-3 bg-transparent text-xl" id="form">
+            <form class=" p-2 mt-8 flex border rounded-2xl px-3 bg-transparent text-xl" id="form">
                 <input type="text" id="city" placeholder="Enter City" class="bg-transparent w-full focus:outline-none border-none">
                 <submit id="submit"class="text-white ">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </submit>
             </form>
-            <div id="weatherInfo">  
-                <h2>Weather in <span id="cityShow"></span></h2>
-                <h2>Temperature: <span id="temp"></span></h2>
-                <h2>wind: <span id="wind"></span></h2>
-                <h2>Weather <span id="description"></span></h2>
-                <h2>Forcast</h2>
-                <p>Hello</p>
+            <div class="mt-8">  
+                <ul>
+                    <ol>Weather in <span id="cityShow"></span></ol>
+                    <ol>Temperature: <span id="temp"></span></ol>
+                    <ol>wind: <span id="wind"></span></ol>
+                    <ol>Weather <span id="description"></span></ol>
+                    <ol>Forcast</h2>
+                </ul>
                 <div id="forecast"></div>
             </div>
         </div>
