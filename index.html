@@ -9,24 +9,26 @@
 </head>
 <body class="font-mono bg-cover bg-no-repeat" style="background-image: url(Background.jpg); height: 100vh;">
     <!-- <h1 class="text-center pt-7 text-xl font-bold ">Weather Application</h1> -->
-    <div class="mainContainer flex justify-center mt-4">
-        <div class="info">
+    <div class="mainContainer mt-5">
+        <div class="info flex justify-center items-center">
             <form class=" p-2 mt-4 flex border rounded-2xl px-3 bg-transparent text-xl" id="form">
-                <input type="text" id="city" placeholder="Enter City" class="bg-transparent w-full focus:outline-none border-none">
+                <input type="text" id="city" placeholder="Enter City" class="bg-transparent focus:outline-none border-b-2 border-gray-300">
                 <submit id="submit"class="text-white ">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </submit>
             </form>
-            <div class="mt-32 bg-black bg-opacity-50 text-white rounded-xl h-40 w-96">  
+        </div>
+        <div class="flex justify-center items-center">
+            <div class="mt-32 bg-black bg-opacity-50 text-white rounded-xl h-40 w-2/5">  
                 <h2 class="text-center pt-4">Weather in <span id="cityShow"></span></h2>
-                <ul class="flex justify-around">
+                <ul class="flex justify-evenly w-100">
                     <ol><span id="temp"> </span><br> Temperature</ol>
                     <ol><span id="wind"> </span><br> Wind</ol>
                     <ol><span id="description"> </span><br> Weather</ol>
                 </ul>
             </div>
-            <div id="forecast"></div>
         </div>
+        <div id="forecast"></div>
     </div>
 </body>
 <script src="script.js"></script>
