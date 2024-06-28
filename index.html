@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="font-mono bg-cover bg-no-repeat" style="background-image: url(Background.jpg);height: 100vh;">
+<body class="font-mono bg-cover bg-no-repeat" style="background-image: url(Background.jpg); height: 100vh;">
     <!-- <h1 class="text-center pt-7 text-xl font-bold ">Weather Application</h1> -->
-    <div class="mainContainer flex justify-center ">
+    <div class="mainContainer flex justify-center mt-4">
         <div class="info">
             <form class=" p-2 mt-4 flex border rounded-2xl px-3 bg-transparent text-xl" id="form">
                 <input type="text" id="city" placeholder="Enter City" class="bg-transparent w-full focus:outline-none border-none">
@@ -17,15 +17,15 @@
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </submit>
             </form>
-            <div id="weatherInfo">  
-                <h2>Weather in <span id="cityShow"></span></h2>
-                <h2>Temperature: <span id="temp"></span></h2>
-                <h2>wind: <span id="wind"></span></h2>
-                <h2>Weather <span id="description"></span></h2>
-                <h2>Forcast</h2>
-                <p>Hello</p>
-                <div id="forecast"></div>
+            <div class="mt-32 bg-black bg-opacity-50 text-white rounded-xl h-40 w-96">  
+                <h2 class="text-center pt-4">Weather in <span id="cityShow"></span></h2>
+                <ul class="flex justify-around">
+                    <ol><span id="temp"> </span><br> Temperature</ol>
+                    <ol><span id="wind"> </span><br> Wind</ol>
+                    <ol><span id="description"> </span><br> Weather</ol>
+                </ul>
             </div>
+            <div id="forecast"></div>
         </div>
     </div>
 </body>
